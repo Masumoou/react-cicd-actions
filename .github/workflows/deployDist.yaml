@@ -5,12 +5,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get code
-              uses: actions/checkout@v5
+              uses: actions/checkout@v4
                 #echo "hello world"
                 #echo "${{toJson(github)}}"
                 #git clone https://github.com/${{github.repository}}.git
             - name: Install Node 20
-              uses: actions/setup-node@v5
+              uses: actions/setup-node@v4
               with:
                 node-version: 20
             - name: print node version
