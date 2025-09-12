@@ -28,7 +28,7 @@ jobs:
               run: npm ci
             - name: Run Test
               run: npm run test
-    buid:
+    build:
         needs: test
         runs-on: ubuntu-latest
         steps:
@@ -50,7 +50,7 @@ jobs:
 
 
     deploy:
-        needs: test
+        needs: build
         runs-on: ubuntu-latest
         steps:
             - name: Download dist Artifact
